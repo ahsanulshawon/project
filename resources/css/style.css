@@ -1,0 +1,575 @@
+/*========================*/
+/*Besic Setup*/
+/*========================*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+    
+}
+ul li{
+    list-style-type: none;
+}
+/*Heading*/
+h1{
+    font-size: 2.5rem;
+    color: white;
+}
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+/*========================*/
+/*Reuseable Component*/
+/*========================*/
+
+.row{
+    max-width: 85rem;
+    margin: 0 auto;
+}
+section{
+    padding: 5.5rem 0;
+
+}
+h2{
+    font-size: 2rem;
+    letter-spacing: .3rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 2rm;
+    color: #fff;
+    text-align: center;
+}
+h2::after{
+    content: "";
+    display: block;
+    height: .4rem;
+    background: #14a58c;
+    width: 8.5rem;
+    margin: auto;
+    margin-top: 2rem;
+    border-radius: 2rem;
+}
+/*Little dis */
+
+.little-dis{
+    font-size: 1.3rem;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 2rem;
+}
+
+/*Button*/
+
+.btn:link,
+.btn:visited,
+.btn{
+    background: #eb7d4b;
+    padding: .7rem 1.87rem;
+    border-radius: .31rem;
+    border-bottom: #c86a40;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    display: inline-block;
+    
+
+}
+/*========================*/
+/*Start header Section*/
+/*========================*/
+header{
+    background: linear-gradient(rgba(135, 80, 156, 0.8),rgba(135, 80, 156, 0.8)), url(img/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    height: 85vh;
+    position: relative;
+}
+.logo{
+    height: 2.6rem;
+    width: auto;
+    float: left;
+    margin-top: 1.25rem;
+}
+/*Main navigation*/
+.main-nav{
+    float: right;
+    margin-top: 2.18rem;
+}
+.main-nav li{
+    display: inline-block;
+    margin-left: 1.25rem;
+}
+.main-nav li:first-child{
+    margin-left: 0;
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+    color: #fff;
+    text-decoration: none;
+    background: rgba(100, 58, 121, 0);
+    padding:.18rem 1rem;
+    border-radius: .18rem;
+    display: inline-block;
+    font-size: 1.4rem;
+    transition: .3s;
+}
+.main-nav li a:hover:link,
+.main-nav li a:hover:visited{
+    background: rgba(100, 58, 121, 1);
+}
+.activ{
+    background: rgba(100, 58, 121, 1);
+    border-radius: .18rem;
+    
+}
+
+/*Sticky Navigation*/
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(135, 80, 156, 0.7);
+    padding: 1rem 0;
+    
+}
+.sticky .logo{
+    margin-top: 0;
+}
+.sticky .main-nav{
+    margin-top: .3rem;
+}
+
+/*Sticky Navigation*/
+
+.hero-text-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    text-align: center;
+    font-size: 2.63rem;
+    margin-bottom: 2rem;
+    width: 85rem;
+}
+/*========================*/
+/*End header Section*/
+/*========================*/
+
+
+/*========================*/
+/*Start Service Section*/
+/*========================*/
+
+.serv-section{
+    color: white;
+    text-align: center;
+    background: linear-gradient(rgba(23, 194, 164, 0.9),rgba(23, 194, 164, 0.9)), url(img/bg3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    background-attachment: fixed;
+}
+.icon{
+    height: 7rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem
+}
+h3{
+    letter-spacing: .1rem;
+    margin-bottom: 2rem;
+}
+.sub-p {
+    width: 90%;
+    margin: auto;
+}
+
+/*========================*/
+/*End Service Section*/
+/*========================*/
+
+/*========================*/
+/*Start Team Section*/
+/*========================*/
+.team-section img{
+    width: 14rem;
+}
+.team-section{
+    text-align: center;
+    background: ;
+    background: linear-gradient(rgba(231, 241, 248, 0.9), rgba(231, 241, 248, 0.9)), url(img/avenger.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+}
+.team-section h2{
+    color: #3c4761;
+}
+.team-section h2::after{
+    background: #c8d9e5;
+}
+.team-member{
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+    width: 15rem;
+    border-radius: 50%;
+}
+.team-section h3{
+    font-size: 1.5rem;
+    color: #3c4761;
+    margin-bottom: .4rem;
+}
+.role{
+    color: #48c1e9;
+    font-size: 1.2rem;
+}
+section .role-dis{
+    color: #3c4761;
+    margin-top: 1rem;
+}
+.social-link{
+    margin-top: 2rem;
+}
+.social-link ul li{
+    display: inline-block;
+    margin: .3rem;
+}
+.social-link ul li a{
+    color: #fff;
+
+}
+.social-link ul li a:link i{
+    background: #bdd1df;
+    width: 2.9rem;
+    height: 2.9rem;
+    display: inline-block;
+    padding: .6rem;
+    border-radius: 50%;
+    transition: .5s;
+}
+.social-link ul li a:hover i{
+    background: #393939;
+    transform: rotate(360deg);
+}
+
+/*========================*/
+/*End Team Section*/
+/*========================*/
+
+/*========================*/
+/*Start skill Section*/
+/*========================*/
+
+.skill-section{
+    background: #ffffff;
+    color: #3c4761;
+    text-align: center;
+}
+.skill-section p{
+    margin: 2rem 0;
+    display: inline-block;
+}
+.skill-section h2,
+.skill-section h3{
+    color: #3c4761;
+}
+
+.skill-section h2::after{
+    background: #dfe8ed;
+}
+.skill-section .box{
+    margin: .5rem;
+}
+svg.radial-progress circle {
+    stroke-width: 7;
+}
+svg.radial-progress text{
+    
+    fill: #3c4761;
+    
+}
+svg.web-design circle{
+    stroke: #30bae7;
+}
+svg.html-css circle{
+    stroke: #d74680;
+}
+svg.g-design circle{
+    stroke: #15c7a8;
+}
+svg.ui-ux circle{
+    stroke: #eb7d4b;
+}
+svg.radial-progress {
+  height: auto;
+  max-width: 15rem;
+  padding: 2rem;
+  transform: rotate(-90deg);
+  width: 100%;
+}
+.skill-section{
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, .8)), url(img/bg6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+}
+/*========================*/
+/*End skill Section*/
+/*========================*/
+
+
+/*========================*/
+/*Start Protfolio Section*/
+/*========================*/
+
+
+.protfolio-section{
+    background: linear-gradient(rgba(255, 221, 153, 0.8), rgba(255, 221, 153, 0.8)), url(img/bg4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    text-align: center;
+
+}
+.protfolio-section h2,
+.protfolio-section h3,
+.protfolio-section h4{
+        color: #393939;
+}
+.protfolio-filter{
+    margin: 3.5rem;
+}
+.protfolio-filter button{
+    background: #ebc985;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: .5rem;
+    margin: .4rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    transition: .5s;
+}
+.protfolio-filter button:hover{
+    cursor: pointer;
+    box-shadow: inset 0 .5rem .2rem rgba(60, 71, 97, 0.5);
+}
+
+.protfolio-img{
+    widows: 100%;
+    height: 20rem;
+}
+.protfolio-section .col:nth-child(3){
+    margin-left: 0;
+}
+.protfolio-section h4{
+    margin: 2rem 0;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.protfolio-section .btn-load-more{
+    background: #17c2a4;
+    color: #fff;
+    padding: 1.2rem 2.5rem;
+    border-radius: .5rem;
+    
+}
+.protfolio-section .btn-load-more:hover{
+        box-shadow: inset 0 -.5rem .2rem rgba(20, 165, 140, 1);
+}
+.protfolio-section .mixitup-control-active{
+    background: #fff;
+}
+/*========================*/
+/*End Protfolio Section*/
+/*========================*/
+
+
+/*========================*/
+/*Start test Section*/
+/*========================*/
+
+
+.test{
+    background: linear-gradient( rgba(215, 70, 128, 0.9), rgba(215, 70, 128, 0.9)), url(img/bg6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    
+}
+
+.test .little-dis{
+    color: #fff;
+}
+.test .clint-review,
+.test h3{
+    color: #fff;
+    margin: 0;
+}
+.test .role{
+    color: #ffdd99;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.test img{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    margin-bottom: 3rem;
+}
+.test .little-dis{
+    text-align: center;
+}
+.test .col:nth-child(3){
+    margin-left: 0;
+}
+.test .col:nth-child(1),
+.test .col:nth-child(2){
+    margin-top: 3.5rem;
+}
+.test .col:nth-child(3),
+.test .col:nth-child(4){
+    margin-top: 4rem;
+}
+.test h2::after{
+    background: #b73c6d;
+}
+.clint-photo{
+    float: left;
+    width: 9rem;
+    margin-right: rem;
+}
+.clint-review p{
+    margin-bottom: 1.2rem;
+    max-width: 20rem;
+    font-style: italic;
+    font-weight: 500;
+}
+.clint-review{
+    margin-left: 0;
+    float: left;
+}
+.clint-review h3{
+    font-weight: 800;
+}
+/*========================*/
+/*End Test Section*/
+/*========================*/
+
+
+
+/*========================*/
+/*Start Contact Section*/
+/*========================*/
+
+
+.contact-section{
+    background: linear-gradient(rgba(60, 84, 153, 0.9), rgba(60, 84, 153, 0.9)), url(img/bg8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    
+    text-align: center;
+    color: #fff;
+    
+}
+.contact-section h2::after{
+    background: #273a71;
+}
+
+.contact-section form{
+    margin-top: 6rem;
+    width: 70%;
+    margin-left: 15%;
+    
+    
+    
+}
+.contact-section input[type="text"],
+.contact-section input[type="email"],
+.contact-section textarea{
+    background: #273a71;
+    border: .1rem solid #273a71;
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    font-size: 1.3rem;
+    margin: .5rem 0;
+    
+}
+.contact-section form ::placeholder{
+    color: #fff;
+    opacity: 1;
+}
+.contact-section .submit{
+    background: #30bae7;
+    margin: 2rem 0;
+    border: none;
+    padding: 1rem 2rem;
+}
+.contact-section .submit:hover{
+    box-shadow: inset 0 -.5rem .2rem #299ec5;
+    cursor: pointer;
+    
+}
+.contact-section .little-dis{
+    width: 100%;
+    margin: auto;
+    margin-top: 2.5rem;
+}
+.contact-section form input{
+    color: #fff;
+}
+
+/*========================*/
+/*End Contact Section*/
+/*========================*/
+
+
+/*========================*/
+/*Start Footer Section*/
+/*========================*/
+
+.footer-section{
+    padding: 2rem;
+    background: #344b8e;
+    
+}
+.footer-section ul li{
+    float: left;
+    font-size: 1.5rem;
+    margin: 0 2.3rem;
+}
+.footer-section ul li a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+}
+.footer-section ul li a:hover{
+    color: #30bae7;
+}
+.footer-section ul li:first-child{
+    margin-left: 10rem
+}
+/*========================*/
+/*End Footer Section*/
+/*========================*/

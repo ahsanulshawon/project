@@ -1,0 +1,28 @@
+@media only screen and (max-width: 1024px)
+{
+    .main-nav{
+        display: none;
+    }
+    .sticky{
+        display: none;
+    }
+    .clint-photo{
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+    .clint-review{
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+    .test .clint-review p{
+        width: 42%;
+        margin-left: 12rem;
+        margin-bottom: 0.5rem;
+    
+    }
+    .test img{
+        margin-bottom: 1rem;
+    }
+}
